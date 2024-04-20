@@ -1,4 +1,4 @@
-FROM node:14-stretch-slim as build
+FROM node:21.7.3 as build
 WORKDIR /app
 COPY . /app
 RUN npm install && npm run build
